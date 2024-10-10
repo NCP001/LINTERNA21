@@ -1,0 +1,33 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="16dp"
+    android:background="@drawable/linterna"> <!-- Cambia "tu_imagen" por el nombre de tu archivo PNG sin la extensión -->
+
+    <TextView
+        android:id="@+id/flashlightStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Linterna apagada"
+        android:textSize="18sp"
+        android:layout_gravity="center" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" /> <!-- Espaciador vacío para empujar la barra hacia abajo -->
+
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:max="100"
+        android:min="0"
+        android:progress="0"
+        android:layout_gravity="center" /> <!-- Centra la SeekBar -->
+
+</LinearLayout>
